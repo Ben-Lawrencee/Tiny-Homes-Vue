@@ -1,15 +1,18 @@
 <template>
-  <div>
-    
+  <div class="wrapper background">
+    <mentor-card/>
+    <mentor-card/>
+    <mentor-card/>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import MentorCard from "@/components/MentorCard.vue";
 
 export default defineComponent({
   name: 'App',
-  components: {},
+  components: { MentorCard },
   data() {
     return {
       //Global variables here
@@ -22,6 +25,10 @@ export default defineComponent({
 </script>
 
 <style>
+html {
+  background: #0F2E1B;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
